@@ -1,0 +1,37 @@
+services:
+    chromium:
+        build:
+            context: .
+            target: chromium
+        image: jacoblincool/bahamut-automation:chromium
+    firefox:
+        build:
+            context: .
+            target: firefox
+        image: jacoblincool/bahamut-automation:firefox
+    webkit:
+        build:
+            context: .
+            target: webkit
+        image: jacoblincool/bahamut-automation:webkit
+    chrome:
+        build:
+            context: .
+            target: chrome
+        image: jacoblincool/bahamut-automation:chrome
+    msedge:
+        build:
+            context: .
+            target: msedge
+        image: jacoblincool/bahamut-automation:msedge
+    all:
+        build:
+            context: .
+            target: all
+        image: jacoblincool/bahamut-automation:all
+
+    chromium-light:
+        build:
+            context: .
+            target: chromium-light
+        image: jacoblincool/bahamut-automation:chromium-light
